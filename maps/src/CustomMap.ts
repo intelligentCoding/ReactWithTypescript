@@ -5,12 +5,13 @@ import { company } from 'faker';
 // HEre we will creat an interface that will have instructions
 // on how the other classes can be an argument to 'addMarker'
 
-interface Mappable {
+export interface Mappable {
     location : {
        lat : number;
        lng: number; 
     };
     markerContent(): string;
+    color: string;
 }
 
 
